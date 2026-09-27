@@ -1,23 +1,16 @@
 # Proyecto 1 — Aplicaciones en Ciencia de Datos
 
-Proyecto académico de análisis exploratorio del conjunto de datos **AnAge Animalia**. El objetivo es revisar la calidad de los datos, identificar valores faltantes y duplicados, y preparar una copia limpia sin modificar el archivo original.
+Proyecto académico de análisis exploratorio de **Características y composición del hogar**. La base de trabajo tiene 235.350 registros y 78 variables. Por ahora solo está preparada la carga y la inspección inicial; la limpieza, el análisis y las conclusiones siguen pendientes.
 
-El dataset contiene información sobre taxonomía, reproducción, peso, longevidad y metabolismo de especies animales.
+## Archivos de trabajo
 
-## Contenido
+- `datos/raw/caracteristicas_composicion_hogar.csv`: copia sin modificaciones del archivo proporcionado para este proyecto. Usa `;` como separador y coma decimal.
+- `notebooks/01_limpieza_preparacion.ipynb`: notebook del proyecto. En esta primera etapa carga la base correcta y revisa su estructura.
+- `datos/procesados/`: espacio reservado para una versión preparada; todavía no se ha generado para esta base.
+- `requirements.txt`: dependencias de Python.
 
-- `datos/raw/anage_animalia.csv`: dataset original.
-- `datos/procesados/anage_animalia_preparado.csv`: copia preparada para el análisis.
-- `notebooks/01_limpieza_preparacion.ipynb`: inspección, limpieza y preparación de los datos.
-- `requirements.txt`: librerías necesarias para ejecutar el proyecto.
-- `.vscode/settings.json`: configuración del ambiente de Python utilizado en VS Code.
+Los archivos `anage_animalia.csv` y `anage_animalia_preparado.csv` pertenecen al trabajo anterior equivocado y **no deben utilizarse** para este proyecto. Se retirarán al completar la revisión de las siguientes etapas. La procedencia institucional, el año y el significado de las variables codificadas aún deben confirmarse con el enunciado o diccionario de datos; el nombre del CSV por sí solo no los demuestra.
 
 ## Ejecución
 
-Instale las dependencias con:
-
-```bash
-pip install -r requirements.txt
-```
-
-Después, abra y ejecute el notebook en orden desde la primera celda.
+Instala las dependencias con `pip install -r requirements.txt` y ejecuta el notebook desde la raíz del repositorio o desde `notebooks/`.
